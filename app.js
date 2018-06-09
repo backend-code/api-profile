@@ -13,11 +13,11 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const passDB = "BSaBo5owDCjFdLcx";
+
 
 
 // connent database
-mongoose.connect('mongodb+srv://admin:n1409901607307@profile-cgkfq.mongodb.net/profile?atlasAdmin=true');
+mongoose.connect('mongodb://127.0.0.1:27017/profile');
 
 var db = mongoose.connection;
 
